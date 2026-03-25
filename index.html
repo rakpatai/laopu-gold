@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laopu Gold — Analyst Meeting Highlights · 24 March 2026</title>
+<meta name="description" content="สรุปทุกประเด็นสำคัญจาก Analyst Meeting ของ Laopu Gold (6181.HK) — ถอดรหัส FY2025 Results และ Q1/2026 Guidance ที่ทำลายทุก Consensus">
+<meta property="og:title" content="Laopu Gold 老铺黄金 — ถอดรหัส Analyst Meeting">
+<meta property="og:description" content="สรุป Analyst Meeting 24 มี.ค. 2026 — Sales ¥31.37B (+220%), Per-store Sales #1 โลก, Q1 กำไรเกินครึ่ง Consensus ทั้งปี, บุกตลาดไทย-ญี่ปุ่น-เกาหลี">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Laopu Gold — ถอดรหัส Analyst Meeting 24 March 2026">
+<meta name="twitter:description" content="Triple-digit growth 3 ปีซ้อน, #1 Per-store Sales ของโลก, บุกตลาดต่างประเทศ 7 ประเทศ">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥇</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Sarabun:wght@300;400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #E8D48B;
+    --gold-dark: #9A7B2F;
+    --black: #0A0A0A;
+    --near-black: #111;
+    --charcoal: #1A1A1A;
+    --dark-gray: #2A2A2A;
+    --text-primary: #E8E4DC;
+    --text-secondary: #B8B0A2;
+    --text-muted: #807A70;
+    --red-accent: #C0392B;
+    --green-accent: #27AE60;
+    --bg-card: rgba(255,255,255,0.03);
+    --border-subtle: rgba(201,168,76,0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--black);
+    color: var(--text-primary);
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 300;
+    line-height: 1.85;
+    overflow-x: hidden;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    position: relative;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background:
+      radial-gradient(ellipse at 50% 55%, rgba(201,168,76,0.07) 0%, transparent 50%),
+      radial-gradient(ellipse at 25% 35%, rgba(201,168,76,0.03) 0%, transparent 40%);
+    animation: shimmer 8s ease-in-out infinite alternate;
+  }
+
+  @keyframes shimmer {
+    from { transform: translateY(0) scale(1); opacity: 1; }
+    to   { transform: translateY(-15px) scale(1.04); opacity: 0.65; }
+  }
+
+  .hero-content { position: relative; z-index: 2; max-width: 860px; }
+
+  .hero-tag {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.45em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.8rem;
+    opacity: 0; animation: fadeUp .9s .2s forwards;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.4rem, 6.5vw, 5rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: .8rem;
+    opacity: 0; animation: fadeUp .9s .4s forwards;
+  }
+
+  .hero h1 .gold { background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+  .hero-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1rem, 2.2vw, 1.4rem);
+    font-weight: 300; font-style: italic;
+    color: var(--text-secondary);
+    max-width: 620px; margin: 1.2rem auto 0;
+    opacity: 0; animation: fadeUp .9s .6s forwards;
+  }
+
+  .hero-line {
+    width: 70px; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 2rem auto;
+    opacity: 0; animation: fadeUp .9s .8s forwards;
+  }
+
+  .hero-meta {
+    font-size: .78rem; letter-spacing: .15em;
+    color: var(--text-muted);
+    opacity: 0; animation: fadeUp .9s 1s forwards;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(25px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── Layout ── */
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 2rem 5rem; }
+
+  /* ── Section Headers ── */
+  .sec-head { display: flex; align-items: center; gap: 1.1rem; margin: 4.5rem 0 2rem; }
+  .sec-num  { font-family: 'Playfair Display', serif; font-size: 3.2rem; font-weight: 900; color: var(--gold); opacity: .22; line-height: 1; }
+  .sec-title { font-family: 'Playfair Display', serif; font-size: 1.65rem; font-weight: 700; color: var(--text-primary); line-height: 1.3; }
+
+  /* ── Text ── */
+  p { font-size: 1.05rem; color: var(--text-secondary); margin-bottom: 1.5rem; }
+  p strong { color: var(--text-primary); font-weight: 600; }
+
+  /* ── Pull-quote ── */
+  .quote {
+    position: relative;
+    margin: 3rem 0;
+    padding: 2.2rem 2.2rem 2.2rem 2.8rem;
+    border-left: 3px solid var(--gold);
+    background: linear-gradient(135deg, rgba(201,168,76,0.04), transparent);
+  }
+  .quote p { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-style: italic; font-weight: 400; color: var(--text-primary); line-height: 1.7; margin: 0; }
+  .quote .attr { font-family: 'Sarabun', sans-serif; font-size: .82rem; font-style: normal; color: var(--gold); margin-top: .9rem; letter-spacing: .05em; }
+
+  /* ── Stats ── */
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1.3rem; margin: 2.8rem 0; }
+  .stat {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 2px;
+    padding: 1.8rem 1.3rem;
+    text-align: center;
+    transition: border-color .4s, transform .4s;
+  }
+  .stat:hover { border-color: rgba(201,168,76,.35); transform: translateY(-3px); }
+  .stat-lab { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--text-muted); margin-bottom: .5rem; }
+  .stat-val { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: var(--gold); line-height: 1.2; }
+  .stat-unit { font-size: .78rem; color: var(--text-muted); }
+  .stat-note { font-size: .82rem; color: var(--green-accent); margin-top: .35rem; font-weight: 600; }
+  .stat-note.warn { color: var(--gold); }
+
+  /* ── Highlight Box ── */
+  .hbox {
+    background: linear-gradient(135deg, rgba(201,168,76,0.06), rgba(201,168,76,0.02));
+    border: 1px solid rgba(201,168,76,0.15);
+    border-radius: 3px;
+    padding: 1.8rem 2.2rem;
+    margin: 2.5rem 0;
+  }
+  .hbox h4 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--gold); margin-bottom: .9rem; }
+  .hbox p { margin-bottom: .7rem; font-size: 1rem; }
+  .hbox p:last-child { margin-bottom: 0; }
+
+  /* ── Bullet list (minimal) ── */
+  .kv-list { margin: 2rem 0; }
+  .kv-item {
+    display: flex; gap: 1.2rem; align-items: flex-start;
+    margin-bottom: 1.4rem;
+  }
+  .kv-dot {
+    flex-shrink: 0; width: 8px; height: 8px;
+    border-radius: 50%; background: var(--gold);
+    margin-top: .6rem;
+  }
+  .kv-body h5 { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--text-primary); margin-bottom: .2rem; }
+  .kv-body p  { font-size: .92rem; color: var(--text-secondary); margin: 0; }
+
+  /* ── Table ── */
+  .tbl-wrap { margin: 2.5rem 0; overflow-x: auto; }
+  .tbl { width: 100%; border-collapse: collapse; font-size: .93rem; }
+  .tbl thead th {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: .73rem; letter-spacing: .11em;
+    text-transform: uppercase; color: var(--gold);
+    padding: .9rem 1.1rem; text-align: right;
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+    white-space: nowrap;
+  }
+  .tbl thead th:first-child { text-align: left; }
+  .tbl tbody td {
+    padding: .9rem 1.1rem; text-align: right;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    color: var(--text-secondary); white-space: nowrap;
+  }
+  .tbl tbody td:first-child { text-align: left; color: var(--text-primary); font-weight: 400; }
+  .tbl tbody tr:hover { background: rgba(201,168,76,0.03); }
+  .badge {
+    display: inline-block; font-size: .78rem; font-weight: 700;
+    padding: .12em .45em; border-radius: 2px;
+    background: rgba(39,174,96,0.12); color: var(--green-accent);
+  }
+
+  /* ── Comparison Bars ── */
+  .comp { margin: 2.5rem 0; }
+  .comp-row { margin-bottom: 1.3rem; }
+  .comp-head { display: flex; justify-content: space-between; margin-bottom: .35rem; font-size: .88rem; }
+  .comp-head span:first-child { color: var(--text-primary); }
+  .comp-head span:last-child  { color: var(--gold); font-weight: 600; font-family: 'Playfair Display', serif; }
+  .comp-bg { height: 5px; background: var(--charcoal); border-radius: 3px; overflow: hidden; }
+  .comp-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-light)); transition: width 1.4s cubic-bezier(.22,1,.36,1); }
+
+  /* ── Expansion Map ── */
+  .geo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin: 2rem 0; }
+  .geo-card {
+    background: var(--bg-card); border: 1px solid var(--border-subtle);
+    border-radius: 2px; padding: 1.2rem 1rem; text-align: center;
+    transition: border-color .3s;
+  }
+  .geo-card:hover { border-color: rgba(201,168,76,.3); }
+  .geo-flag { font-size: 1.6rem; margin-bottom: .4rem; }
+  .geo-name { font-size: .85rem; color: var(--text-primary); font-weight: 600; }
+  .geo-detail { font-size: .75rem; color: var(--text-muted); margin-top: .2rem; }
+
+  /* ── Disclaimer ── */
+  .disc {
+    margin-top: 4.5rem; padding-top: 1.8rem;
+    border-top: 1px solid rgba(201,168,76,0.1);
+    font-size: .76rem; color: var(--text-muted);
+    line-height: 1.7; font-style: italic;
+  }
+
+  /* ── Fade-in ── */
+  .fi { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+  .fi.visible { opacity: 1; transform: translateY(0); }
+
+  @media (max-width: 600px) {
+    .wrap { padding: 0 1.2rem 3.5rem; }
+    .stats { grid-template-columns: 1fr 1fr; gap: .9rem; }
+    .stat { padding: 1.1rem .9rem; }
+    .stat-val { font-size: 1.5rem; }
+    .sec-num { font-size: 2.4rem; }
+    .sec-title { font-size: 1.3rem; }
+    .quote { padding: 1.4rem 1.4rem 1.4rem 1.8rem; }
+    .quote p { font-size: 1.1rem; }
+    .hbox { padding: 1.3rem; }
+    .geo-grid { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════ HERO ═══════ -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-tag">Analyst Meeting Highlights · Earnings Call Summary</div>
+    <h1><span class="gold">Laopu Gold</span><br>ถอดรหัส Analyst Meeting</h1>
+    <p class="hero-sub">สรุปทุกประเด็นสำคัญจากงานแถลงผลประกอบการ FY2025 และ Q1/2026 Guidance — วันที่นักวิเคราะห์ทั่วโลกต้องปรับตัวเลขใหม่</p>
+    <div class="hero-line"></div>
+    <div class="hero-meta">6181.HK &nbsp;·&nbsp; Analyst Briefing 24 มีนาคม 2026 &nbsp;·&nbsp; Beijing</div>
+  </div>
+</section>
+
+<!-- ═══════ CONTENT ═══════ -->
+<div class="wrap">
+
+  <!-- ── 01 ── -->
+  <div class="sec-head fi">
+    <span class="sec-num">01</span>
+    <h2 class="sec-title">ตัวเลขจริงจากปาก CFO — ใหญ่กว่าที่คิด</h2>
+  </div>
+
+  <p class="fi">สิ่งแรกที่ทำให้ห้องประชุมเงียบกริบ คือตัวเลข <strong>ยอดขาย (Sales)</strong> ที่ผู้บริหารประกาศอย่างเป็นทางการ — ไม่ใช่ 27.3 พันล้านหยวนตามที่ตลาดรับรู้จาก Revenue ในงบ แต่เป็น <strong>31.37 พันล้านหยวน (฿1.5 แสนล้าน)</strong> เมื่อรวม Sales เต็มจำนวน คิดเป็นการเติบโต +220% YoY</p>
+
+  <div class="stats fi">
+    <div class="stat">
+      <div class="stat-lab">ยอดขาย FY2025</div>
+      <div class="stat-val">31,370</div>
+      <div class="stat-unit">ล้านหยวน</div>
+      <div class="stat-note">+220% YoY</div>
+    </div>
+    <div class="stat">
+      <div class="stat-lab">Adj. Net Profit</div>
+      <div class="stat-val">5,030</div>
+      <div class="stat-unit">ล้านหยวน</div>
+      <div class="stat-note">+235% YoY</div>
+    </div>
+    <div class="stat">
+      <div class="stat-lab">Net Profit Margin</div>
+      <div class="stat-val">18.4%</div>
+      <div class="stat-unit">Adjusted</div>
+      <div class="stat-note warn">17.8% Reported</div>
+    </div>
+    <div class="stat">
+      <div class="stat-lab">ยอดขายเฉลี่ย/ร้าน</div>
+      <div class="stat-val">~1B</div>
+      <div class="stat-unit">หยวน/ปี</div>
+      <div class="stat-note">#1 ของโลก</div>
+    </div>
+  </div>
+
+  <p class="fi">CFO Li Jia เปิดเผยว่า ราคาทองคำเฉลี่ยถ่วงน้ำหนักในจีนปรับตัวขึ้นจาก <strong>¥633/กรัม → ¥980/กรัม</strong> ภายในปี 2025 (+54.8%) ส่งผลให้ Gross Margin ลดลงเล็กน้อยมาอยู่ที่ ~37.6% เนื่องจากต้นทุนวัตถุดิบวิ่งเร็วกว่าการปรับราคาขาย — แต่หลังจากปรับราคาครั้งที่ 3 ในเดือนตุลาคม 2025 <strong>Gross Margin กลับมาอยู่เหนือ 40%</strong> ได้สำเร็จ</p>
+
+  <div class="tbl-wrap fi">
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th>ปี</th>
+          <th>Revenue (ล้าน ¥)</th>
+          <th>Revenue Growth</th>
+          <th>Adj. Net Profit</th>
+          <th>Profit Growth</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>FY2023</td>
+          <td>3,180</td>
+          <td><span class="badge">+145%</span></td>
+          <td>~415</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>FY2024</td>
+          <td>8,510</td>
+          <td><span class="badge">+166%</span></td>
+          <td>1,474</td>
+          <td><span class="badge">+254%</span></td>
+        </tr>
+        <tr>
+          <td>FY2025</td>
+          <td>27,303</td>
+          <td><span class="badge">+220%</span></td>
+          <td>5,030</td>
+          <td><span class="badge">+235%</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="fi">Triple-digit growth ติดต่อกัน 3 ปีซ้อน (145% → 166% → 220%) — และอัตราเร่งยังเพิ่มขึ้นตามขนาดบริษัทที่ใหญ่ขึ้น ซึ่งตรงข้ามกับ Law of Large Numbers ที่มักทำให้การเติบโตชะลอ</p>
+
+  <!-- ── 02 ── -->
+  <div class="sec-head fi">
+    <span class="sec-num">02</span>
+    <h2 class="sec-title">#1 ของโลก — Per-Store & Per-Sqm Sales</h2>
+  </div>
+
+  <p class="fi">ข้อมูลจาก <strong>Frost & Sullivan</strong> ที่ผู้บริหารอ้างอิงในที่ประชุม ชี้ว่า Laopu Gold ขึ้นแท่น <strong>อันดับ 1 ของโลก</strong> ทั้งในแง่ยอดขายต่อร้าน (Per-Store Sales) และยอดขายต่อตารางเมตร (Per-Sqm Sales) ในกลุ่ม Luxury Brand ที่เปิดให้บริการภายใน Shopping Mall เดียวกันในจีน</p>
+
+  <div class="hbox fi">
+    <h4>Key Milestones จากข้อมูล Frost & Sullivan / PwC</h4>
+    <p><strong>อันดับ 1 โลก</strong> — ยอดขายต่อร้าน & ต่อตารางเมตร ในกลุ่ม Luxury Brand (single mall, China)</p>
+    <p><strong>อันดับ 2</strong> — Revenue ในจีน เทียบกลุ่ม Luxury ทั่วโลก (เป็นแบรนด์จีนเดียวใน Top 5)</p>
+    <p><strong>Comparable-Store Sales เติบโต +161% YoY</strong></p>
+    <p><strong>หลายสาขาทำยอดขาย ¥300–400 ล้านต่อร้าน</strong></p>
+  </div>
+
+  <p class="fi">ข้อมูลจาก PwC ระบุเพิ่มเติมว่า เมื่อวัดจาก Revenue ที่เกิดขึ้นภายในประเทศจีน Laopu อยู่อันดับ 2 ในบรรดากลุ่ม Luxury ทั่วโลก — และเป็น <strong>แบรนด์จีนแบรนด์เดียว</strong> ที่ติด Top 5 แซงหน้าหลายชื่อดังระดับโลก</p>
+
+  <!-- ── 03 ── -->
+  <div class="sec-head fi">
+    <span class="sec-num">03</span>
+    <h2 class="sec-title">ลูกค้า Hermès คือลูกค้า Laopu — Repurchase 82.4%</h2>
+  </div>
+
+  <p class="fi">ข้อมูลที่น่าสนใจมากจากผู้บริหารคือ <strong>อัตราซื้อซ้ำ (Repurchase Rate)</strong> ของลูกค้า Laopu เพิ่มขึ้นจาก 77.3% (กรกฎาคม 2025) มาอยู่ที่ <strong>82.4% (มีนาคม 2026)</strong> — ซึ่งเทียบเท่ากับ Big Five Luxury Brands อย่าง Louis Vuitton, Hermès, Cartier และ Bulgari</p>
+
+  <div class="comp fi">
+    <div class="comp-row">
+      <div class="comp-head">
+        <span>Repurchase Rate — มี.ค. 2026</span>
+        <span>82.4%</span>
+      </div>
+      <div class="comp-bg"><div class="comp-fill" style="width:82.4%"></div></div>
+    </div>
+    <div class="comp-row">
+      <div class="comp-head">
+        <span>Repurchase Rate — ก.ค. 2025</span>
+        <span>77.3%</span>
+      </div>
+      <div class="comp-bg"><div class="comp-fill" style="width:77.3%"></div></div>
+    </div>
+    <div class="comp-row">
+      <div class="comp-head">
+        <span>Gold Members สิ้นปี 2025</span>
+        <span>610,000 คน (+74.3%)</span>
+      </div>
+      <div class="comp-bg"><div class="comp-fill" style="width:74.3%"></div></div>
+    </div>
+  </div>
+
+  <p class="fi">จำนวนสมาชิก Gold Member เพิ่มขึ้น 260,000 รายจากสิ้นปี 2024 มาอยู่ที่ 610,000 ราย โดยทั้งความถี่ในการซื้อและมูลค่าเฉลี่ยต่อธุรกรรมก็ปรับตัวขึ้นอย่างมีนัยสำคัญ — เป็นสัญญาณว่า Brand Loyalty ของ Laopu ไม่ได้ลดลงแม้ฐานลูกค้าจะขยายตัว</p>
+
+  <!-- ── 04 ── -->
+  <div class="sec-head fi">
+    <span class="sec-num">04</span>
+    <h2 class="sec-title">Store Expansion — 34 ร้านใน 16 เมือง & Go Global</h2>
+  </div>
+
+  <p class="fi">ปี 2025 Laopu เปิดร้านใหม่ <strong>10 สาขา</strong> — ทั้งหมดตั้งอยู่ใน First-tier cities หรือมหานครระดับสากล และเป็นห้างระดับ Top เท่านั้น</p>
+
+  <div class="geo-grid fi">
+    <div class="geo-card">
+      <div class="geo-flag">🇨🇳</div>
+      <div class="geo-name">Shanghai</div>
+      <div class="geo-detail">+4 ร้าน (รวม IFC Mall)</div>
+    </div>
+    <div class="geo-card">
+      <div class="geo-flag">🇨🇳</div>
+      <div class="geo-name">Beijing</div>
+      <div class="geo-detail">+2 ร้าน</div>
+    </div>
+    <div class="geo-card">
+      <div class="geo-flag">🇨🇳</div>
+      <div class="geo-name">Shenzhen</div>
+      <div class="geo-detail">+1 ร้าน</div>
+    </div>
+    <div class="geo-card">
+      <div class="geo-flag">🇨🇳</div>
+      <div class="geo-name">Nanjing</div>
+      <div class="geo-detail">+1 ร้าน</div>
+    </div>
+    <div class="geo-card">
+      <div class="geo-flag">🇭🇰</div>
+      <div class="geo-name">Hong Kong</div>
+      <div class="geo-detail">+1 ร้าน</div>
+    </div>
+    <div class="geo-card">
+      <div class="geo-flag">🇸🇬</div>
+      <div class="geo-name">Singapore</div>
+      <div class="geo-detail">Marina Bay Sands</div>
+    </div>
+  </div>
+
+  <p class="fi">จุดเปลี่ยนสำคัญคือ <strong>Marina Bay Sands, Singapore</strong> (เปิด 21 มิ.ย. 2025) ซึ่งเป็นร้านแรกในต่างประเทศอย่างเป็นทางการ — และ <strong>Shanghai IFC Mall</strong> (เปิด 25 ต.ค. 2025) ที่ทำให้ Laopu กลายเป็น <strong>แบรนด์จีนแบรนด์เดียว</strong> ที่มีร้านครบทุก Top 10 Luxury Mall ในจีน</p>
+
+  <div class="hbox fi">
+    <h4>แผนขยายร้าน 2026 — ข้อมูลใหม่จาก Analyst Meeting</h4>
+    <p><strong>ในประเทศ:</strong> เน้น Optimization ร้านเดิม 8–12 สาขา — ขยายพื้นที่ ย้ายทำเลให้ดีขึ้น โดย Shanghai เป็น Core Market (มี 5 สาขา, 3 แห่งเซ็นสัญญาปรับปรุงแล้ว) เริ่มเปิดร้านใหม่ในประเทศอย่างจริงจังมากขึ้น</p>
+    <p><strong>ต่างประเทศ:</strong> เดินหน้าขยายใน Hong Kong, Macau, Singapore, Malaysia, Japan, South Korea และ <strong>Thailand</strong> — ติดต่อเบื้องต้นเรียบร้อยแล้ว จะเปิดร้านใหม่ใน 6–7 เมืองหลัก</p>
+    <p style="color:var(--text-muted); font-size:.9rem; margin-top:.8rem;">* ผู้บริหารระบุว่า India ยังไม่อยู่ในแผนปัจจุบัน แต่ไม่ปิดกั้นในอนาคต</p>
+  </div>
+
+  <!-- ── 05 NEW: International Expansion Opportunity ── -->
+  <div class="sec-head fi">
+    <span class="sec-num">05</span>
+    <h2 class="sec-title">โอกาสการขยายตลาดต่างประเทศ — ขุมทองแห่งใหม่</h2>
+  </div>
+
+  <p class="fi">หนึ่งในประเด็นที่ถูกพูดถึงมากที่สุดใน Analyst Meeting คือ <strong>แผนขยายธุรกิจสู่ตลาดต่างประเทศ</strong> — ซึ่งถือเป็นบทใหม่ที่สำคัญที่สุดของ Laopu Gold เพราะจนถึงขณะนี้ รายได้เกือบทั้งหมดยังมาจากตลาดจีนเพียงประเทศเดียว การเปิดประตูสู่ต่างแดนจึงเป็นทั้ง <strong>Upside Catalyst</strong> ที่ยังไม่ได้รับการ Price-in และเป็น TAM Expansion ที่ใหญ่มหาศาล</p>
+
+  <div class="hbox fi">
+    <h4>ภาพรวมตลาดจิวเวลรี่ใน Asia-Pacific</h4>
+    <p><strong>ตลาดจิวเวลรี่ Asia-Pacific:</strong> มูลค่า ~$220.7 พันล้าน (2024) คิดเป็น 60% ของตลาดโลก เติบโต CAGR ~5.7% สู่ $359B ภายในปี 2033</p>
+    <p><strong>ตลาดจิวเวลรี่ Southeast Asia:</strong> มูลค่า ~$13.2 พันล้าน (2025) เติบโต CAGR ~3.9% — ทองคำครองส่วนแบ่ง ~66% เพราะฝังลึกในวัฒนธรรมและพฤติกรรมการลงทุน</p>
+    <p><strong>Luxury Jewelry ใน Asia-Pacific:</strong> เป็นหมวดที่ใหญ่ที่สุดคิดเป็น ~24.7% ของตลาด Luxury Goods ทั้ง Region</p>
+    <p style="color:var(--gold); font-weight:600; margin-top:.8rem;">Laopu ยังแทบไม่ได้แตะตลาดเหล่านี้เลย — Upside จึงมหาศาล</p>
+  </div>
+
+  <p class="fi">ผู้บริหารเปิดเผยว่า Laopu ได้ติดต่อเบื้องต้นกับพันธมิตรใน <strong>7 ตลาดหลัก</strong> นอกจีนแผ่นดินใหญ่แล้ว ได้แก่ Hong Kong, Macau, Singapore, Malaysia, Japan, South Korea และ <strong>Thailand</strong> โดยจะเปิดร้านใหม่ใน 6-7 เมืองหลักภายในปีนี้ มาดูโอกาสในแต่ละตลาด:</p>
+
+  <!-- Target Markets Grid -->
+  <div class="geo-grid fi" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.2rem;">
+    <div class="geo-card" style="padding: 1.5rem 1.2rem; text-align: left;">
+      <div class="geo-flag" style="font-size: 2rem;">🇹🇭</div>
+      <div class="geo-name" style="font-size: 1rem; margin-bottom: .4rem;">Thailand</div>
+      <p style="font-size: .82rem; color: var(--text-secondary); margin: 0; line-height: 1.6;">ตลาด Luxury Jewelry ~$272M (2025) เติบโต CAGR 6.6% — คนไทยมีวัฒนธรรมทองคำที่แข็งแกร่ง นักท่องเที่ยวจีนกว่า 7 ล้านคน/ปี Bangkok เป็น Luxury Hub ที่ IconSiam, Paragon, EmSphere ล้วนรองรับ High-end Brand</p>
+    </div>
+    <div class="geo-card" style="padding: 1.5rem 1.2rem; text-align: left;">
+      <div class="geo-flag" style="font-size: 2rem;">🇯🇵</div>
+      <div class="geo-name" style="font-size: 1rem; margin-bottom: .4rem;">Japan</div>
+      <p style="font-size: .82rem; color: var(--text-secondary); margin: 0; line-height: 1.6;">เงินเยนอ่อนดึงนักท่องเที่ยวจีน Tax-free shopping ทะลุ 232% ของระดับก่อน COVID — Ginza และ Osaka เป็นทำเลเป้าหมาย Xu เคยระบุว่า Japan เป็น "Key Region" แต่ยังเดินตาม Timeline ปกติแม้มีปัจจัยภูมิรัฐศาสตร์</p>
+    </div>
+    <div class="geo-card" style="padding: 1.5rem 1.2rem; text-align: left;">
+      <div class="geo-flag" style="font-size: 2rem;">🇰🇷</div>
+      <div class="geo-name" style="font-size: 1rem; margin-bottom: .4rem;">South Korea</div>
+      <p style="font-size: .82rem; color: var(--text-secondary); margin: 0; line-height: 1.6;">ตลาด K-Luxury ที่คนรุ่นใหม่ชื่นชอบแบรนด์ที่มี Cultural Story — การรุกตลาด K-Beauty Hub อย่าง Gangnam, Myeongdong อาจสร้าง Cross-cultural Appeal ใหม่ให้ Laopu</p>
+    </div>
+    <div class="geo-card" style="padding: 1.5rem 1.2rem; text-align: left;">
+      <div class="geo-flag" style="font-size: 2rem;">🇲🇾</div>
+      <div class="geo-name" style="font-size: 1rem; margin-bottom: .4rem;">Malaysia</div>
+      <p style="font-size: .82rem; color: var(--text-secondary); margin: 0; line-height: 1.6;">ชาวมาเลย์เชื้อสายจีนมีกำลังซื้อสูง KL เป็น Luxury Hub ที่โต Pavilion KL และ TRX Exchange ดึง Luxury Brand — French Jeweller Fred เพิ่งเปิดร้านแรกใน Seibu TRX ปี 2024</p>
+    </div>
+    <div class="geo-card" style="padding: 1.5rem 1.2rem; text-align: left;">
+      <div class="geo-flag" style="font-size: 2rem;">🇸🇬</div>
+      <div class="geo-name" style="font-size: 1rem; margin-bottom: .4rem;">Singapore (ขยายเพิ่ม)</div>
+      <p style="font-size: .82rem; color: var(--text-secondary); margin: 0; line-height: 1.6;">ร้าน Marina Bay Sands เปิดแล้ว — Singapore คาดรับนักท่องเที่ยว 10 ล้านคน/ปี ภายในปี 2026 เป็น Gateway สำหรับ Global Chinese Diaspora และ ASEAN High-net-worth</p>
+    </div>
+    <div class="geo-card" style="padding: 1.5rem 1.2rem; text-align: left;">
+      <div class="geo-flag" style="font-size: 2rem;">🇭🇰 🇲🇴</div>
+      <div class="geo-name" style="font-size: 1rem; margin-bottom: .4rem;">Hong Kong & Macau</div>
+      <p style="font-size: .82rem; color: var(--text-secondary); margin: 0; line-height: 1.6;">Harbour City optimization กำหนด มิ.ย. 2026 — HK/Macau เป็นตลาด Duty-free ที่จับนักท่องเที่ยวจีนแผ่นดินใหญ่ ร้าน Macau ยังเจาะกลุ่ม Casino VIP ที่มี Average Transaction สูงมาก</p>
+    </div>
+  </div>
+
+  <p class="fi">สิ่งที่น่าสนใจคือ <strong>กลยุทธ์ Go Global ของ Laopu ไม่ได้เน้นแค่ "จับนักท่องเที่ยวจีน"</strong> — Xu Gaoming ระบุชัดเจนในที่ประชุมว่าบริษัทไม่ได้แบ่งลูกค้าว่าต้องเป็น "ชาวจีน" หรือ "ไม่ใช่ชาวจีน" แต่เน้นที่การส่งมอบ <strong>คุณค่าเชิงวัฒนธรรมและศิลปะ</strong> ที่ข้ามพรมแดนได้ — ปรับ Product Strategy ตามนิสัยการบริโภค วัฒนธรรม และค่านิยมของแต่ละตลาด</p>
+
+  <div class="quote fi">
+    <p>"เราไม่ได้แยกว่าลูกค้าต้องเป็นชาวจีนหรือไม่ เราปรับกลยุทธ์ผลิตภัณฑ์ตามพฤติกรรมผู้บริโภค วัฒนธรรม และค่านิยมของแต่ละตลาด เป้าหมายคือการเป็นแบรนด์ระดับโลก"</p>
+    <div class="attr">— Xu Gaoming, ตอบคำถาม Guohai Securities เรื่อง Internationalization</div>
+  </div>
+
+  <div class="hbox fi">
+    <h4>ทำไม Thailand ถึงน่าจับตามองเป็นพิเศษ?</h4>
+    <p><strong>วัฒนธรรมทองคำ:</strong> คนไทยมีความผูกพันกับทองคำอย่างลึกซึ้ง — ทั้งในฐานะเครื่องประดับ สินทรัพย์เก็บออม และของขวัญในงานมงคล ทองคำครองส่วนแบ่ง ~66% ของตลาดจิวเวลรี่ SEA</p>
+    <p><strong>ท่องเที่ยวจีน:</strong> ไทยเป็นจุดหมายปลายทางอันดับต้นๆ ของนักท่องเที่ยวจีน — คาดว่าจะรับนักท่องเที่ยวต่างชาติ 42+ ล้านคน โดยนักท่องเที่ยวจีนใช้จ่ายเฉลี่ย ~$1,300/คน ในสินค้า Luxury</p>
+    <p><strong>Luxury Infrastructure:</strong> Bangkok มี Luxury Mall ระดับโลก — IconSiam, Siam Paragon, EmSphere, Central Embassy — ทำเลที่ตรงกับ Brand Positioning ของ Laopu ทุกประการ</p>
+    <p><strong>ตลาดว่างสำหรับ Heritage Gold Luxury:</strong> ยังไม่มีแบรนด์ใดครอง Segment "Heritage Gold Jewelry" ในระดับ Luxury ในไทย — Laopu สามารถเป็น First Mover ได้</p>
+    <p><strong>Chinese Diaspora:</strong> ชาวไทยเชื้อสายจีนจำนวนมากมีความเชื่อมโยงทางวัฒนธรรมกับงานฝีมือจีนโบราณ ทำให้ "古法黄金" มี Cultural Resonance ตามธรรมชาติ</p>
+  </div>
+
+  <p class="fi">ในแง่ตัวเลข หากมองว่า Laopu สามารถทำยอดขายต่อร้านในต่างประเทศได้เพียง <strong>ครึ่งหนึ่ง</strong> ของค่าเฉลี่ยในจีน (~¥500M ต่อร้านต่อปี) — การเปิดร้านใหม่ 6-7 แห่งใน 6-7 เมืองทั่วเอเชีย อาจเพิ่มรายได้ ¥3,000-3,500 ล้านต่อปี หรือราว <strong>10-12% ของรายได้ FY2025</strong> ซึ่งเป็น Incremental Revenue ที่ยังไม่อยู่ใน Consensus ของนักวิเคราะห์ส่วนใหญ่</p>
+
+  <div class="stats fi">
+    <div class="stat">
+      <div class="stat-lab">SEA Jewelry Market</div>
+      <div class="stat-val">$13.2B</div>
+      <div class="stat-unit">ปี 2025</div>
+      <div class="stat-note">CAGR 3.9%</div>
+    </div>
+    <div class="stat">
+      <div class="stat-lab">ทองคำ % ของ SEA Jewelry</div>
+      <div class="stat-val">~66%</div>
+      <div class="stat-unit">ส่วนแบ่งตลาด</div>
+      <div class="stat-note warn">วัฒนธรรม + การลงทุน</div>
+    </div>
+    <div class="stat">
+      <div class="stat-lab">Thai Luxury Jewelry</div>
+      <div class="stat-val">$272M</div>
+      <div class="stat-unit">ปี 2025</div>
+      <div class="stat-note">CAGR 6.6%</div>
+    </div>
+    <div class="stat">
+      <div class="stat-lab">ร้านใหม่ต่างประเทศ (แผน)</div>
+      <div class="stat-val">6-7</div>
+      <div class="stat-unit">เมืองหลัก</div>
+      <div class="stat-note">ปี 2026</div>
+    </div>
+  </div>
+
+  <p class="fi">ในภาพใหญ่ การขยายต่างประเทศของ Laopu ไม่ใช่แค่เรื่องรายได้ — แต่เป็น <strong>Brand Building ระดับโลก</strong> ที่จะยกสถานะจาก "แบรนด์จีนที่ดีที่สุด" ไปเป็น "แบรนด์ Luxury ระดับโลกที่มีรากจากจีน" — เหมือนที่ Hermès คือแบรนด์ "ฝรั่งเศส" แต่ขายได้ทั่วโลก Laopu ต้องการเป็นแบรนด์ "จีน" ที่คนทั้งเอเชียและทั่วโลกต้องการครอบครอง</p>
+
+  <div class="quote fi">
+    <p>"เป้าหมายของเราคือการสร้าง Laopu ให้เป็นแบรนด์ระดับโลก — นำเสนอความงามของงานฝีมือตะวันออกสู่สายตาชาวโลก"</p>
+    <div class="attr">— Feng Jianjun, Deputy GM, ปิดท้าย Business Review</div>
+  </div>
+
+  <!-- ── 06 (was 05) ── -->
+  <div class="sec-head fi">
+    <span class="sec-num">06</span>
+    <h2 class="sec-title">Xu Gaoming พูดเรื่องราคาทอง — ไม่กลัวขาลง</h2>
+  </div>
+
+  <p class="fi">คำถามที่ถูกถามบ่อยที่สุดในงานคือ: <strong>"ถ้าราคาทองคำลง จะเกิดอะไรขึ้น?"</strong> — ประธาน Xu Gaoming ตอบอย่างตรงไปตรงมาว่า บริษัทไม่เคยให้มุมมองเชิง Bullish หรือ Bearish ต่อราคาทอง แต่สิ่งที่บริษัทมั่นใจคือ <strong>ความสามารถในการบริหารทั้งในช่วงขาขึ้นและขาลง</strong></p>
+
+  <div class="quote fi">
+    <p>"ตลอด 16 ปีนับตั้งแต่ก่อตั้ง บริษัทเคยผ่านช่วงขาลงของทองคำมาแล้ว — และเราพิสูจน์แล้วว่าสามารถรักษาผลประกอบการให้มั่นคงได้ สิ่งที่สำคัญไม่ใช่ทิศทางราคาทอง แต่คือ Brand Strength, Product Quality และ Customer Service"</p>
+    <div class="attr">— Xu Gaoming, Chairman & CEO, Laopu Gold (สรุปความ)</div>
+  </div>
+
+  <p class="fi">Xu อธิบายว่า Pricing Power ของ Laopu มาจาก 3 เสาหลัก: (1) <strong>Brand Equity</strong> — ชื่อเสียงที่สร้างมายาวนาน ทำให้ลูกค้าเชื่อมั่นในคุณค่าแม้ตลาดผันผวน (2) <strong>Product Strength</strong> — มูลค่าทางวัฒนธรรม ศิลปะ และงานฝีมือที่ทำให้ลูกค้ายอมจ่าย Premium (3) <strong>Customer Stickiness</strong> — ระบบ After-sales Service ที่ได้รับการยอมรับว่าดีที่สุดในกลุ่ม Luxury ทั้งในและต่างประเทศ</p>
+
+  <p class="fi">เขายังเปรียบเทียบอย่างน่าสนใจว่า: <em>"ตอนผมไม่มีเงิน เพื่อนก็ยังคบกับผม ตอนผมรวย เพื่อนก็อยากมาคบ และตอนผมกลับไปจนอีกครั้ง เพื่อนก็ยังอยู่ เพราะความสัมพันธ์ที่แท้จริงสร้างจากคุณค่า ไม่ใช่สถานการณ์ — แบรนด์ก็เช่นกัน"</em></p>
+
+  <!-- ── 06 ── -->
+  <div class="sec-head fi">
+    <span class="sec-num">07</span>
+    <h2 class="sec-title">การแข่งขันกับ Luxury ฝรั่ง — "Cultural Showdown"</h2>
+  </div>
+
+  <p class="fi">เมื่อนักวิเคราะห์จาก Zhongyi Securities ถามเรื่องการแข่งขันกับแบรนด์ Luxury ระดับโลกที่เริ่มรุกตลาดจิวเวลรี่ทองคำ — Xu Gaoming ตอบอย่างมั่นใจว่า <strong>การแข่งขันในระดับนี้ไม่ใช่แค่เรื่อง Market Power แต่เป็น "การปะทะทาง DNA ทางวัฒนธรรม"</strong></p>
+
+  <p class="fi">เขาชี้ว่า Laopu มี <strong>ข้อได้เปรียบ 2 ประการที่ลอกเลียนไม่ได้</strong>: (1) <strong>Values & Philosophy</strong> — ค่านิยมและปรัชญาขององค์กรที่ฝังลึกในตัวผู้ก่อตั้ง ซึ่ง Xu เล่าว่าเขาร่ำรวยมาก่อนจะเริ่มทำ Laopu จึงทำด้วยความหลงใหลในศิลปะอย่างแท้จริง ไม่ใช่เพราะต้องการเงิน (2) <strong>Aesthetic Accumulation</strong> — ความเข้าใจเชิงลึกในวัฒนธรรมจีนโบราณ ศิลปะ งานฝีมือ และ "Eastern Aesthetic" ที่สั่งสมมากว่า 30 ปี</p>
+
+  <div class="quote fi">
+    <p>"ถ้าแบรนด์ระดับโลกจะเข้ามาแข่งจริงจัง — นักแสดงงิ้วปักกิ่งไม่มีวันกลัวข่าวลือจากต่างชาติ นี่คือการปะทะทางวัฒนธรรม และเราต้อนรับทุกคู่แข่งที่จะมาช่วยยกระดับอุตสาหกรรมนี้"</p>
+    <div class="attr">— Xu Gaoming (สรุปความจากคำตอบใน Q&A Session)</div>
+  </div>
+
+  <!-- ── 07 ── -->
+  <div class="sec-head fi">
+    <span class="sec-num">08</span>
+    <h2 class="sec-title">Product & IP — 2,300 ดีไซน์ / 283 สิทธิบัตร</h2>
+  </div>
+
+  <p class="fi">ด้านนวัตกรรมผลิตภัณฑ์ สิ้นปี 2025 Laopu มี <strong>Original Designs สะสม 2,300+ ชิ้น</strong>, สิทธิบัตรอรรถประโยชน์ 283 รายการ, ลิขสิทธิ์ผลงาน 1,683 ชิ้น และค่าลิขสิทธิ์จากต่างประเทศ 276 รายการ</p>
+
+  <p class="fi">ผลิตภัณฑ์ใหม่ที่เปิดตัวในปี 2025 อย่าง <strong>จี้น้ำเต้าเจ็ดนิ้ว, จี้เพชรกากบาท</strong> และ <strong>คอลเลกชัน Gold-bodied Lacquerware</strong> ที่ผสมผสานเทคนิค "螺钿" (ฝังเปลือกหอยมุก) ซึ่งเป็นมรดกทางวัฒนธรรมที่จับต้องไม่ได้ — ได้รับความนิยมอย่างล้นหลาม และถูกผู้บริหารเรียกว่า "มีผลกระทบเชิง epoch-making ต่ออุตสาหกรรม"</p>
+
+  <div class="stats fi">
+    <div class="stat">
+      <div class="stat-lab">Original Designs</div>
+      <div class="stat-val">2,300+</div>
+      <div class="stat-unit">สะสม</div>
+    </div>
+    <div class="stat">
+      <div class="stat-lab">Utility Patents</div>
+      <div class="stat-val">283</div>
+      <div class="stat-unit">รายการ</div>
+    </div>
+    <div class="stat">
+      <div class="stat-lab">Copyrights</div>
+      <div class="stat-val">1,683</div>
+      <div class="stat-unit">ผลงาน</div>
+    </div>
+    <div class="stat">
+      <div class="stat-lab">สาขาทั่วโลก</div>
+      <div class="stat-val">45</div>
+      <div class="stat-unit">ร้าน (34 ห้าง, 16 เมือง)</div>
+    </div>
+  </div>
+
+  <!-- ── 08 ── -->
+  <div class="sec-head fi">
+    <span class="sec-num">09</span>
+    <h2 class="sec-title">Q&A Highlights — คำถามจาก JPM, CICC, UBS, Citi</h2>
+  </div>
+
+  <div class="kv-list fi">
+    <div class="kv-item">
+      <div class="kv-dot"></div>
+      <div class="kv-body">
+        <h5>JPMorgan — แรงขับเคลื่อนการเติบโตหลังปี 2026?</h5>
+        <p>ผู้บริหารตอบว่ายังคงเน้น 4 เสาหลัก: Product, Channel, Customer Service, Brand — และมั่นใจว่า Brand Momentum ที่แข็งแกร่งจะเป็นเครื่องยนต์หลัก ไม่ให้ Guidance เชิงตัวเลขสำหรับปี 2026 แต่บอกให้นักวิเคราะห์ "ลองคำนวณเองจากผลลัพธ์ Q1"</p>
+      </div>
+    </div>
+
+    <div class="kv-item">
+      <div class="kv-dot"></div>
+      <div class="kv-body">
+        <h5>CICC — กลยุทธ์ High-net-worth & Channel Optimization?</h5>
+        <p>Xu เน้นย้ำว่า High-net-worth management เป็นหัวใจสำคัญไม่ว่าตลาดจะขึ้นหรือลง — ผลลัพธ์ Q1 ที่ดีเกินคาดสะท้อนผลสำเร็จของกลยุทธ์นี้โดยตรง ด้าน Channel จะเน้น Optimize ร้านเดิม (8-12 ร้าน) ก่อน แล้วจึงเปิดร้านใหม่ทั้งในและต่างประเทศ</p>
+      </div>
+    </div>
+
+    <div class="kv-item">
+      <div class="kv-dot"></div>
+      <div class="kv-body">
+        <h5>UBS — ปัญหา Proxy Purchasing & ความต้องการเงินทุน?</h5>
+        <p>บริษัทจัดการ Daigou (ตัวแทนซื้อ) โดยจำกัดจำนวนซื้อต่อรอบ ร่วมกับเจ้าหน้าที่รักษาความปลอดภัย — ไม่ใช่การสร้าง Scarcity แต่เพื่อปกป้อง Official Channel ส่วนเรื่องเงินทุน Xu ย้ำว่าทุกการระดมทุนมีไว้เพื่อซื้อวัตถุดิบทองคำรองรับการเติบโต 90% ของเงินที่ได้ไปเข้า Material Procurement โดยตรง</p>
+      </div>
+    </div>
+
+    <div class="kv-item">
+      <div class="kv-dot"></div>
+      <div class="kv-body">
+        <h5>Citi — Price Tier Strategy & Inventory Risk?</h5>
+        <p>ผู้บริหารชี้แจงว่า สินค้าส่วนใหญ่อยู่ใต้ ¥100,000 — ช่วง ¥100,000–200,000 ไม่ใช่จุดโฟกัส (เพราะทองคำหนักเกินไปสำหรับสวมใส่) ขณะที่ระดับ ¥300,000+ จะเป็นงานศิลปะสะสม ด้าน Inventory ¥16B สิ้นปี 2025 เพิ่มขึ้นจาก ¥4B เพื่อรองรับ CNY Peak Season</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 09 ── -->
+  <div class="sec-head fi">
+    <span class="sec-num">10</span>
+    <h2 class="sec-title">Online Revenue & Operations</h2>
+  </div>
+
+  <p class="fi">ช่องทาง Online ผ่าน Tmall และ JD.com ทำรายได้ <strong>¥4,657 ล้าน</strong> คิดเป็น 17.1% ของรายได้รวม — แสดงให้เห็นว่า Laopu สามารถขายสินค้า Luxury ผ่านช่องทางออนไลน์ได้อย่างมีประสิทธิภาพ แม้สินค้าจะมีราคาสูง</p>
+
+  <p class="fi">ด้านค่าใช้จ่ายรวม ¥3.9 พันล้าน — คิดเป็นเพียง <strong>14.3% ของรายได้</strong> ลดลงจากปีก่อนอย่างชัดเจน เกิดจาก Operating Leverage ที่รายได้โตเร็วกว่าค่าใช้จ่าย มากกว่า 98% ของ Selling Expense เป็นค่าเช่าห้าง, ค่าธรรมเนียม E-commerce, เงินเดือนทีมขาย และค่าเสื่อมราคา</p>
+
+  <!-- ── 10 ── -->
+  <div class="sec-head fi">
+    <span class="sec-num">11</span>
+    <h2 class="sec-title">สรุป — สิ่งที่ต้องจับตาหลัง Analyst Meeting</h2>
+  </div>
+
+  <p class="fi">Analyst Meeting ครั้งนี้ให้ภาพที่ชัดเจนยิ่งกว่าตัวเลขในงบการเงิน — ผู้บริหาร Laopu Gold ไม่ได้แค่ "ประกาศตัวเลข" แต่วางกรอบความคิดที่ชัดเจนว่าบริษัทกำลังจะเปลี่ยนจาก "แบรนด์จิวเวลรี่จีนที่โตเร็ว" ไปเป็น <strong>"Global Luxury Brand ที่มี Chinese Cultural DNA"</strong></p>
+
+  <div class="hbox fi">
+    <h4>Key Takeaways สำหรับนักลงทุน</h4>
+    <p><strong>1.</strong> ตัวเลข FY2025 ดีกว่าที่ตลาดรับรู้ — Sales จริง ¥31.37B, Adj. Profit ¥5.03B</p>
+    <p><strong>2.</strong> Q1/2026 Guidance ทำลาย Consensus — กำไร Q1 เดียว = ~75% ของกำไรทั้งปี 2025</p>
+    <p><strong>3.</strong> Per-store Sales อันดับ 1 โลก — เหนือกว่าทุกแบรนด์ Luxury ในจีน</p>
+    <p><strong>4.</strong> International Expansion เริ่มจริงจัง — Thailand อยู่ในรายชื่อ</p>
+    <p><strong>5.</strong> Gross Margin กลับเหนือ 40% หลังปรับราคาเดือน ต.ค. 2025</p>
+    <p><strong>6.</strong> ผู้บริหารมั่นใจเรื่อง Pricing Power แม้ราคาทองลง</p>
+    <p><strong>7.</strong> Repurchase Rate 82.4% เทียบเท่า Hermès, LV, Cartier</p>
+  </div>
+
+  <div class="quote fi">
+    <p>เมื่อบริษัทเติบโต Triple Digit 3 ปีซ้อน, มียอดขายต่อร้านอันดับ 1 โลก, กำลังบุกตลาดโลก และมี Q1 ที่ทำลายทุก Consensus — สิ่งที่เกิดขึ้นต่อจากนี้ จะเป็นการ Re-rating ครั้งใหญ่</p>
+  </div>
+
+  <!-- ── Disclaimer ── -->
+  <div class="disc fi">
+    <strong>Disclaimer:</strong> บทความนี้สรุปจาก Analyst Meeting Transcript ของ Laopu Gold (6181.HK) วันที่ 24 มีนาคม 2026 จัดทำเพื่อวัตถุประสงค์ในการให้ข้อมูลเท่านั้น ไม่ถือเป็นคำแนะนำในการลงทุน การซื้อ หรือขายหลักทรัพย์ใดๆ ตัวเลขบางส่วนอาจเป็นการตีความจาก Transcript ที่ผ่านการแปลภาษา ผู้อ่านควรตรวจสอบข้อมูลจากแหล่งทางการอีกครั้ง การลงทุนมีความเสี่ยง ผู้ลงทุนอาจได้รับเงินลงทุนคืนน้อยกว่าเงินลงทุนเริ่มแรก ผู้เขียนอาจมีส่วนได้เสียในหุ้นที่กล่าวถึง
+  </div>
+
+</div>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+document.querySelectorAll('.fi').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
